@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Sistema para Cinema</title>
+    <meta charset="utf-8">
+    <meta content="">
+    <style>
+    	body{
+    		margin: 0;
+    		padding: 0;
+    		font-family: helvetica;
+    	}
+    	h1{
+    		font-family: helvetica;
+    		color: #fff;
+    	}
+    	.cabecalho{
+    		background: lightblue;
+    		padding: 15px;
+    	}
+    	.logo{
+    		display: inline-block;
+    	}
+    	.menu{
+    		margin-top: 10px;
+    		margin-right: 10px;
+    		float: right;
+    	}
+    	.menu ul li{
+    		display: inline;
+    		margin-left: 15px;
+    	}
+    </style>
+  </head>
+  <body>
+    <div class="cabecalho">
+    	<div class="logo">
+    		<h1>Cinema</h1>
+    	</div>
+    	<div class="menu">
+    		<ul>
+    			<li>Home</li>
+    			<li>Filmes</li>
+    			<li>Cotatos</li>
+    			<li>Cadastrar</li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="post_filmes">
+    	
+    </div>
+  </body>
+</html>
