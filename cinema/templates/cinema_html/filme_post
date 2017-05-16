@@ -42,6 +42,9 @@
     		width: 60%;
     		border: solid 1px #aaa;
     	}
+    	.layout{
+    		
+    	}
     </style>
   </head>
   <body>
@@ -59,14 +62,16 @@
     	</div>
     </div>
     <center><h2>Filmes 2016-2017</h2></center>
-    {% for post in posts %}
-    	<div class="post_filmes">
-    		<h3>Titulo: {{ post.titulo }}</h3>
-    		<p>Data publicação: {{post.data_publicacao}}</p>
-    		<p>Autor: {{post.autor}}</p>
-    		<p>{{post.descricao}}</p>
-    	</div>
-    {% endfor %}
-    <center><p>Copyright &copy;</p>by Tiago Bandeira</center>
+    <div class="layout">
+    	{% for post in posts %}
+    		<div class="post_filmes">
+    			<h3>Titulo: {{ post.titulo }}</h3>
+    			<p>Data publicação: {{post.data_publicacao}}</p>
+    			<p>Autor: {{post.autor}}</p>
+    			<p>{{post.descricao|linebreaksbr}}</p>
+    		</div>
+    	{% endfor %}
+    	<center><p>Copyright &copy;</p>by Tiago Bandeira</center>
+    </div>
   </body>
 </html>
