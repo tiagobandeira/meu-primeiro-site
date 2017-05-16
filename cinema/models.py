@@ -7,7 +7,6 @@ class PostFilmes(models.Model):
     filme = models.CharField(max_length=100)
     autor = models.ForeignKey('auth.User')
     descricao = models.TextField()
-    
     data_criacao = models.DateTimeField(default=timezone.now)
     data_publicacao = models.DateTimeField(blank= True, null=True)
 

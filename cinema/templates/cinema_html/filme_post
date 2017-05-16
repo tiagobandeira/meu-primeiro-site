@@ -13,9 +13,16 @@
     		font-family: helvetica;
     		color: #fff;
     	}
+    	h2{
+    		background: #678;
+    		display: inline-block;
+    		border-radius: 6px;
+    		padding: 15px;
+    	}
     	.cabecalho{
     		background: lightblue;
     		padding: 15px;
+    		box-shadow: 3px 2px 1px #ccc;
     	}
     	.logo{
     		display: inline-block;
@@ -28,6 +35,13 @@
     	.menu ul li{
     		display: inline;
     		margin-left: 15px;
+    	}
+    	.post_filmes{
+    		margin: auto;
+    		padding: 4px 10px 0 10px;
+    		width: 60%;
+    		bbackground: #ddd;
+    		border: solid 1px #aaa;
     	}
     </style>
   </head>
@@ -45,8 +59,15 @@
     		</ul>
     	</div>
     </div>
-    <div class="post_filmes">
-    	
-    </div>
+    <center><h2>Filmes 2016-2017</h2></center>
+    {% for post in posts %}
+    	<div class="post_filmes">
+    		<h3>Titulo: {{ post.titulo }}</h3>
+    		<p>Data publicação: {{post.data_publicacao}}</p>
+    		<p>Autor: {{post.autor}}</p>
+    		<p>{{post.descricao}}</p>
+    	</div>
+    {% endfor %}
+    <center><p>Copyright &copy;</p>by Tiago Bandeira</center>
   </body>
 </html>
