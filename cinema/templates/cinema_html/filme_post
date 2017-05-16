@@ -40,7 +40,6 @@
     		margin: auto;
     		padding: 4px 10px 0 10px;
     		width: 60%;
-    		bbackground: #ddd;
     		border: solid 1px #aaa;
     	}
     </style>
