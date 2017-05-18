@@ -126,13 +126,17 @@ ul a{
     width: 60%;
     margin: auto;
 }
-.col_cab02{
+.col_cab02{ 
     margin-top: 30px;
     margin-right: 20px;
     width: 35%;
     hheight: 100%;
     bbackground: #000;
     float: right;
+}
+.col_cab02 h2{
+    font-family: lobster;
+    color: #710D0D;
 }
 .conteudo01{
     padding-top: 20px;
@@ -226,9 +230,12 @@ texto_post01_lista h3{
     float: right;
     margin-right: 20%;
     width: 50%;
-    background: #000;
+    background: #2A2A2A;
     box-shadow: none;
     font-style: italic;
+}
+#linkpost1 a, #linkpost2 a{
+    color: #777;
 }
 
 .form{
