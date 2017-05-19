@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
   <body>
+  		<div id="fb-root"></div>
+		<script>
+				(function(d, s, id) {
+ 				 var js, fjs = d.getElementsByTagName(s)[0];
+  				if (d.getElementById(id)) return;
+  				js = d.createElement(s); js.id = id;
+  				js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+  				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
         <div class="layout">
         	<div class="menu">
         		<ul>
@@ -69,7 +79,7 @@
                     
                 </article>
                 <hr>
-                <article class="artigo03">
+                <article class="artigo03" style="display: inline-block;">
                 		<h1>&nbsp;	Lançamentos</h1>
                 		{% for post in posts %}
                 			<div class="postagem">
@@ -85,6 +95,9 @@
     							</div>
 							</div>
                 		{% endfor%}
+                </article>
+                <article class="midia-face">
+                	<div class="fb-page" data-href="https://www.facebook.com/www.tiagobbp.banda.com.br/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                 </article>
         	</div>
         	<div class="conteudo02">
@@ -156,6 +169,6 @@
         			</ul>
         		</div>
         	</div>
-        </div>
+        </div>       
     </body>
 </html>
