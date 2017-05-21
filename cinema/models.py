@@ -15,5 +15,16 @@ class PostFilmes(models.Model):
         self.save()
     def __str__(self):
         return self.titulo
+
+
+class Comentario():
+    autor = models.CharField(max_length=100)
+    texto = models.TextField()
+    email = models.CharField(max_length=100)
+    post_id = models.ForeignKey(PostFilmes)
+    def Comenta(self):
+        self.save()
+    def __str__(self):
+        return self.texto
     
     

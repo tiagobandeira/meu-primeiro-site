@@ -76,6 +76,7 @@ body{
 }
 p{
     display: block;
+     margin: 5px;
 }
 p, ul, img, h3, h4{
     margin: 0;
@@ -168,8 +169,11 @@ ul a{
 .artigo02{
     margin-top: 7%;
 }
- p{
-    margin: 5px;
+.midia-face{
+    margin-right: 30px;
+    display: block; 
+    width: 300px; 
+    float: right;
 }
 .cabecalho, .conteudo01, .conteudo02 .col_cont01{
     text-align: justify;
@@ -177,7 +181,7 @@ ul a{
 .conteudo02{
     width: 100%;
     display: inline-block;
-    background: #222;
+    background: #262626;
     margin-bottom: 0.5%;
     box-shadow: 0 2px 2px #555;
 }

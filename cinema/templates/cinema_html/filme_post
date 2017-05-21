@@ -1,174 +1,21 @@
-{% load staticfiles %}
-<html>
-  <head>
-    <title>Sistema para Cinema</title>
-    <meta charset="utf-8">
-    <meta content="">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/cinema.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-  		<div id="fb-root"></div>
-		<script>
-				(function(d, s, id) {
- 				 var js, fjs = d.getElementsByTagName(s)[0];
-  				if (d.getElementById(id)) return;
-  				js = d.createElement(s); js.id = id;
-  				js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
-  				fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-		</script>
-        <div class="layout">
-        	<div class="menu">
-        		<ul>
-        			<li><a href="#">Home</a></li>
-        			<li><a href="#">Galeria</a></li>
-        			<li><a href="#">Sobre</a></li>
-        		</ul>
-
-        	</div>
-        	<div class="cabecalho">
-        		<div class="col_cab01">
-        			<center><img src="{% static 'imagens/cinema03.jpg'%}"></center>
-        		</div>
-        		<div class="col_cab02">
-        			<h2>Coluna 02</h2>
-        			<p>
-        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        				consequat.
-        			</p>
-        		</div>
-        	</div>
-        	<div class="conteudo01">
-                <article class="artigo01">
-                    <h3>Conteudo 01</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                </article>
-                <article>
-                    <table  style="display: inline-block; background: #000;  margin: 0 0 10px 35px;" class="tabela">
-
-                        <script type="text/javascript">
-                            var cont = 0;
-                            for (var i = 1; i < 6; i++) {
-                                document.write('<td class="tdF"><img src="imagens/img0'+ (i + IrParaProximo()) +'.jpg" width="100%"></td>');
-                            }
-                            function IrParaProximo(){           
-                                cont += 1;
-                                return cont
-                            }
-                        </script>
-                        </tr>
-                    </table>
                     
-                </article>
-                <hr>
-                <article class="artigo03" style="display: inline-block;">
-                		<h1>&nbsp;	Lançamentos</h1>
-                		{% for post in posts %}
-                			<div class="postagem">
-    							<div class="img_post">
-        							<center>
-            							<img src="{% static 'imagens/cinema.jpg'%}">
-        							</center>
-    							</div>
-    							<div class="texto_post" id="texto_post01_lista">
-        							<h2>{{post.titulo}}</h2>
-        							<p>{{post.descricao}}</p>
-        							<p>{{post.data_publicacao}}</p>
-    							</div>
-							</div>
-                		{% endfor%}
-                </article>
-                <article class="midia-face">
-                	<div class="fb-page" data-href="https://www.facebook.com/www.tiagobbp.banda.com.br/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-                </article>
-        	</div>
-        	<div class="conteudo02">
-        		<div class="col_cont01">
-        			<h3>Conteudo 02</h3>
-        			<p>
-        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			</p>
-        			<div class="form">
-        				<form>
-                    		<table>
-                    			<tr>
-                    				<td><label>Digite seu email: </label></td>
-                    			</tr>
-                    			<tr>
-                    				<td><input type="text" name="" id="email"></td>
-                    			</tr>
-                    			<tr>
-                    				<td><label>Seu comentário:</label></td>
-                    			</tr>
-                    			<tr>
-                    				<td><textarea id="comentario"></textarea></td>
-                    			</tr>
-                    		</table>
-                    	</form>
-        			</div>
-        		</div>
-        		<div class="col_cont02">
-        			<div class="postagem" id="linkpost1">
-        				
-        				<div >
-        					<h4>Post 01</h4>
-        					<p>
-        						<a href="#">
-        						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        						tempor incididunt ut labore et dolore magna aliqua
-        						</a>
-        					</p>
-        				</div>
-        			</div>
-        			<div class="postagem" id="linkpost2">
-        				
-        				<div >
-        					<h4>Post 02</h4>
-        					<p>
-        						<a href="#">
-        						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        						tempor incididunt ut labore et dolore magna aliqua
-        						</a>
-        					</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="rodape">
-        		<div class="col_rod01">
-        			<p>Tiago Templedes | &copy; CopyRight</p>
-        		</div>
-        		<div class="col_rod02">
-        			<ul>
-        				<li><a href="#">Home</a></li>
-        				<li><a href="#">Galeria</a></li>
-        				<li><a href="#">Sobre</a></li>
-        			</ul>
-        		</div>
-        	</div>
-        </div>       
-    </body>
-</html>
+{% extends 'cinema_html/base' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="postagem">
+            <div class="img_post">
+                <center><img src="{% static 'imagens/cinema02.jpeg'%}"></center>
+            </div>
+            <div class="texto_post" id="texto_post01_lista">
+                <h2>{{post.titulo}}</h2>
+                <p>{{post.descricao}}</p>
+                <p>{{post.data_publicacao}}</p>
+            </div>
+        </div>
+    {% endfor%} 
+{% endblock  %}
+
+            
