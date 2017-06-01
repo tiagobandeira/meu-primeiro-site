@@ -1,4 +1,5 @@
 {% load staticfiles %}
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
@@ -95,19 +96,19 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="{% static 'imagens/cinema04.jpg'%}" class="img-responsive" alt="...">
+                                    <img src="{% static 'imagens/banner.png'%}" class="img-responsive" alt="...">
                                     <div class="carousel-caption">
         
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="{% static 'imagens/cinema04.jpg'%}" class="img-responsive" alt="...">
+                                    <img src="{% static 'imagens/banner.png'%}" class="img-responsive" alt="...">
                                     <div class="carousel-caption">
                         
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="{% static 'imagens/cinema04.jpg'%}" class="img-responsive" alt="...">
+                                    <img src="{% static 'imagens/banner.png'%}" class="img-responsive" alt="...">
                                     <div class="carousel-caption">
                         
                                     </div>
