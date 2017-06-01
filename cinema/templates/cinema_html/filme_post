@@ -2,17 +2,56 @@
 {% extends 'cinema_html/base' %}
 
 {% load staticfiles %}
-
+{% block head%}
+    <style type="text/css">
+        .row{
+            bborder: solid 1px;
+        }
+        .row{
+            text-align: center;
+        }
+        .row img{
+            width: 190px;
+            height: 297px;
+        }
+    </style>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="">
+                <h1 class="destaques" style="margin: auto; text-align: center;">Principais Filmes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style=""><img src="{% static 'imagens/guardioes.jpeg'%}" width="190px"></div>
+            <div class="col-md-2" style=""><img src="{% static 'imagens/aranha.jpeg'%}" width="190px"></div>
+            <div class="col-md-2" style=""><img src="{% static 'imagens/doutor.jpeg'%}" width="190px"></div>
+            <div class="col-md-2" style=""><img src="{% static 'imagens/piratas.jpeg'%}" width="190px"></div>
+            <div class="col-md-2" style=""><img src="{% static 'imagens/transformes.jpeg'%}" width="190px"></div>
+            <div class="col-md-2" style=""><img src="{% static 'imagens/malvado.jpeg'%}" width="190px"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style=""><h4>Ver Trailer</h4></div>
+            <div class="col-md-2" style=""><h4>Ver Trailer</h4></div>
+            <div class="col-md-2" style=""><h4>Ver Trailer</h4></div>
+            <div class="col-md-2" style=""><h4>Ver Trailer</h4></div>
+            <div class="col-md-2" style=""><h4>Ver Trailer</h4></div>
+            <div class="col-md-2" style=""><h4>Ver Trailer</h4></div>
+        </div>
+    </div>
+{% endblock%}
 {% block content %}
+    <h1 class="destaques">Lançamentos</h1>
     {% for post in posts %}
         <div class="postagem">
             <div class="img_post">
                 <center><img src="{% static 'imagens/cinema02.jpeg'%}"></center>
             </div>
             <div class="texto_post" id="texto_post01_lista">
-                <h2>{{post.titulo}}</h2>
-                <p>{{post.descricao}}</p>
-                <p>{{post.data_publicacao}}</p>
+                <a href="{% url 'cinema.views.detalhes_post' pk=post.pk %}">
+                    <h2>{{post.titulo}}</h2>
+                </a>
+                
+                <p>Data de publicação: {{post.data_publicacao}}</p>
             </div>
         </div>
     {% endfor%} 

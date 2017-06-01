@@ -1,165 +1,318 @@
-
 {% load staticfiles %}
-<html>
+<html lang="pt-br">
   <head>
-    <title>Sistema para Cinema</title>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Sistema para Cinema</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/cinema.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
-  <body>
-		<script>
-            (function(d, s, id) {
-  		        var js, fjs = d.getElementsByTagName(s)[0];
-  		        if (d.getElementById(id)) return;
-  		        js = d.createElement(s); js.id = id;
-  		        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
-  		        fjs.parentNode.insertBefore(js, fjs);
-		      }(document, 'script', 'facebook-jssdk'));
-        </script>
-  		<div id="fb-root"></div>
-		
-        <div class="layout">
-        	<div class="menu">
-        		<ul>
-        			<li><a href="#">Home</a></li>
-        			<li><a href="#">Galeria</a></li>
-        			<li><a href="#">Sobre</a></li>
-        		</ul>
+  <body style="font-family: DejaVu Sans;">
+        <div class="container-fluid" style="">
+        <div class="">
+            <header class="row" >
+                <div content-header="header-wrip">
+                    <div class="col-md-12" >
+                        <nav class="navbar navbar-default" style="background: brown; border: none;">
+                            <div class="container-fluid">
+                                <div class="navbar-header navbar-right">
+                                    <a class="navbar-brand" href="#">
+                                        Cadrastre-se
+                                    </a>
+                                    <button type="button" class="btn btn-default navbar-btn">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        Sign in
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <nav content-header="header-wrip">
+                    <div class="col-md-3" style="text-align: center;">
+                        <h1 style="margin: 0; line-height: 72px"><strong>Cinema</strong></h1>
+                    </div>
+                    <div class="col-md-9" style="padding-top: 10px;">
+                            <!-- Comenco -->
+                        <nav class="navbar navbar-default" >
+                            <div class="container-fluid" >
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+                                  <a class="navbar-brand" href="#"><strong> Home</strong></a>
+                                </div>
 
-        	</div>
-        	<div class="cabecalho">
-        		<div class="col_cab01">
-        			<center><img src="{% static 'imagens/cinema03.jpg'%}"></center>
-        		</div>
-        		<div class="col_cab02">
-        			<h2>Coluna 02</h2>
-        			<p>
-        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        				consequat.
-        			</p>
-        		</div>
-        	</div>
-        	<div class="conteudo01">
-                <article class="artigo01">
-                    <h3>Conteudo 01</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                </article>
-                <article>
-                    <table  style="display: inline-block; background: #000;  margin: 0 0 10px 35px;" class="tabela">
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                      <li class="active"><a href="#">Links <span class="sr-only">(current)</span></a></li>
+                                      <li><a href="#">Link </a></li>
+                                      <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false          ">Dropdown <span    class="caret"></span></a>
+                                                           <ul class="dropdown-menu">
+                                         <li><a href="#">Action</a></li>
+                                         <li><a href="#">Another action</a></li>
+                                         <li><a href="#">Something else here</a></li>
+                                         <li role="separator" class="divider"></li>
+                                         <li><a href="#">Separated link</a></li>
+                                         <li role="separator" class="divider"></li>
+                                         <li><a href="#">One more separated link</a></li>
+                                       </ul>
+                                     </li>
+                                    </ul>
+                                    <form class="navbar-form navbar-left">
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                      </div>
+                                      <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                    </nav>
+                    <!-- Fim -->
+                </div>  
+                <div content-header="header-wrip">
+                    <!-- banner -->
+                    <div class="col-md-12" style="width: 100%; margin-bottom: 15px;">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000" data-houver="mouse-leave">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="{% static 'imagens/cinema04.jpg'%}" class="img-responsive" alt="...">
+                                    <div class="carousel-caption">
+        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'imagens/cinema04.jpg'%}" class="img-responsive" alt="...">
+                                    <div class="carousel-caption">
+                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'imagens/cinema04.jpg'%}" class="img-responsive" alt="...">
+                                    <div class="carousel-caption">
+                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="row" role="grid">
+                <div class="col-md-12">
+                    <h3><strong>Grid 2017</strong></h3>
+                </div>
+                <div content="main">
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="imagens/aranha.jpeg" alt="Sory">
+                        </a>
+                        <div class="caption">
+                            <h3>Sobre </h3>
+                            <p>Coloque a descricao aqui.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">View</a>
+                                <a href="#" class="btn btn-default" role="button">Hide</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="imagens/guardioes.jpeg" alt="Sory">
+                        </a>
+                        <div class="caption">
+                            <h3>Sobre </h3>
+                            <p>Coloque a descricao aqui.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">View</a>
+                                <a href="#" class="btn btn-default" role="button">Hide</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="imagens/transformes.jpeg" alt="Sory">
+                        </a>
+                        <div class="caption">
+                            <h3>Sobre </h3>
+                            <p>Coloque a descricao aqui.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">View</a>
+                                <a href="#" class="btn btn-default" role="button">Hide</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="imagens/piratas.jpeg" alt="Sory">
+                        </a>
+                        <div class="caption">
+                            <h3>Sobre </h3>
+                            <p>Coloque a descricao aqui.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">View</a>
+                                <a href="#" class="btn btn-default" role="button">Hide</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" role="main">
+                    <div class="col-md-12">
+                        <p>OverTop</p>
+                    </div>
+                    <div class="col-md-8" style="height: 250px; ">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Posts</h3>
+                            </div>
+                            <div class="panel-body">
+                                Coloque os posts aqui
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="height: 250px;">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Anuncios</h3>
+                            </div>
+                            <div class="panel-body">
+                                Coloque o anuncio aqui
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Anuncios</h3>
+                            </div>
+                            <div class="panel-body">
+                                Coloque o anuncio aqui
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div content-footer="email" class="row" style="margin-bottom: 0px;">
+                    <div class="col-md-7" style="height: 130px; height: 130px; background: maroon none repeat scroll 0% 0%;">
+                        <div class="list-group" >
+                            <div href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% content-box; border: medium none; color: #555; text-align: center;">
+                                <h3>Cadastre-se <a href="" class="btn btn-primary"> Aqui</a></h3>
+                                <p>Deixe seu email para que possamos lhe mandar novidades</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5" style="height: 130px; background: maroon none repeat scroll 0% 0%; padding-top: 45px;">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="sizing-addon1">@</span> 
+                            <input type="text" name="" class="form-control" placeholder="Seu email" aria-describedby="sizing-addon1">
+                        </div>
+                    </div>
+                </div>
+            <footer  role="footer" class="row" style="background: #222;">
+                <div content-footer="links"  style="" >
+                    <div class="col-md-3" style="height: 150px; ">
+                        <div class="list-group">
+                            <h3>
+                            <a href="#" class="list-group-item " style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">
+                                <strong> Produtos</strong>
+                            </a>
+                            </h3>
+                            <a href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">Coloque os Linques aqui</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="height: 150px; ">
+                        <div class="list-group">
+                            <h3>
+                            <a href="#" class="list-group-item " style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">
+                                <strong> Categorias</strong>
+                            </a>
+                            </h3>
+                            <a href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">Coloque os Linques aqui</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="height: 150px; ">
+                        <div class="list-group">
+                            <h3>
+                            <a href="#" class="list-group-item " style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">
+                                <strong>Posts</strong>
+                            </a>
+                            </h3>
+                            <a href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">Coloque os Linques aqui</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="height: 150px; ">
+                        <div class="list-group">
+                            <h3>
+                            <a href="#" class="list-group-item " style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">
+                                <strong> Endereço</strong>
+                            </a>
+                            </h3>
+                            <a href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% border-box; border: medium none; text-align: center;">Coloque os Linques aqui</a>
+                        </div>
+                    </div>
+                </div>
 
-                        <!--<script type="text/javascript">
-                            var cont = 0;
-                            for (var i = 1; i < 6; i++) {
-                                document.write('<td class="tdF"><img src="imagens/img0'+ (i + IrParaProximo()) +'.jpg" width="100%"></td>');
-                            }
-                            function IrParaProximo(){           
-                                cont += 1;
-                                return cont
-                            }
-                        </script>--> 
-                        </tr>
-                    </table>
-                    
-                </article>
-                <hr>
-                <article class="midia-face" style="display: block; width: 300px; float: right;">
-                        <div class="fb-page" data-href="https://www.facebook.com/Templates-Now-730167907189802/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Templates-Now-730167907189802/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Templates-Now-730167907189802/">Templates Now</a></blockquote></div>
-                </article>
-                <article class="artigo03" style="">
-                		<h1>&nbsp;	Lançamentos</h1>
-                		{% block content%}
-                        {% endblock %}
-                </article>
-                
-        	</div>
-        	<div class="conteudo02" style="">
-        		<div class="col_cont01">
-        			<h3>Conteudo 02</h3>
-        			<p>
-        				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			</p>
-        			<div class="form">
-        				<form>
-                    		<table>
-                    			<tr>
-                    				<td><label>Digite seu email: </label></td>
-                    			</tr>
-                    			<tr>
-                    				<td><input type="text" name="" id="email"></td>
-                    			</tr>
-                    			<tr>
-                    				<td><label>Seu comentário:</label></td>
-                    			</tr>
-                    			<tr>
-                    				<td><textarea id="comentario"></textarea></td>
-                    			</tr>
-                    		</table>
-                    	</form>
-        			</div>
-        		</div>
-        		<div class="col_cont02">
-        			<div class="postagem" id="linkpost1">
-        				
-        				<div >
-        					<h4>Post 01</h4>
-        					<p>
-        						<a href="#">
-        						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        						tempor incididunt ut labore et dolore magna aliqua
-        						</a>
-        					</p>
-        				</div>
-        			</div>
-        			<div class="postagem" id="linkpost2">
-        				
-        				<div >
-        					<h4>Post 02</h4>
-        					<p>
-        						<a href="#">
-        						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        						tempor incididunt ut labore et dolore magna aliqua
-        						</a>
-        					</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="rodape">
-        		<div class="col_rod01">
-        			<p>Tiago Templedes | &copy; CopyRight</p>
-        		</div>
-        		<div class="col_rod02">
-        			<ul>
-        				<li><a href="#">Home</a></li>
-        				<li><a href="#">Galeria</a></li>
-        				<li><a href="#">Sobre</a></li>
-        			</ul>
-        		</div>
-        	</div>
-        </div>       
-    </body>
+                <div content-footer="social"  style="" >
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item" style="">
+                                <span class="icon icon-facebook"></span> 
+                                Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+                <div content-footer="endfooter" >
+                    <div  class="col-md-6" style="text-align: center; line-height: 2;">
+                        <p>Site Produzido por Templates Now</p>
+                    </div>
+                    <div  class="col-md-6" style="text-align: center; line-height: 2;">
+                        <h5><span class="label label-default">Copyright &copy; 2017 </span></h5>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="{% static 'js/jquery.js'%}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>      
+  </body>
 </html>

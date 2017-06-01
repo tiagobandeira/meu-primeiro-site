@@ -17,7 +17,7 @@ class PostFilmes(models.Model):
         return self.titulo
 
 
-class Comentario():
+class Comentario(models.Model):
     autor = models.CharField(max_length=100)
     texto = models.TextField()
     email = models.CharField(max_length=100)
@@ -25,6 +25,6 @@ class Comentario():
     def Comenta(self):
         self.save()
     def __str__(self):
-        return self.texto
+        return self.autor
     
     
