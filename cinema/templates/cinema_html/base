@@ -220,15 +220,15 @@
                     </div>
             </div>
             <div content-footer="email" class="row" style="margin-bottom: 0px;">
-                    <div class="col-md-7" style="height: 130px; height: 130px; background: maroon none repeat scroll 0% 0%;">
+                    <div class="col-md-7" style="height: 130px; height: 130px; background: brown none repeat scroll 0% 0%;">
                         <div class="list-group" >
-                            <div href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% content-box; border: medium none; color: #555; text-align: center;">
+                            <div href="#" class="list-group-item" style="background: transparent none repeat scroll 0% 0% content-box; border: medium none; color: rgb(45, 45, 45); text-align: center;">
                                 <h3>Cadastre-se <a href="" class="btn btn-primary"> Aqui</a></h3>
                                 <p>Deixe seu email para que possamos lhe mandar novidades</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5" style="height: 130px; background: maroon none repeat scroll 0% 0%; padding-top: 45px;">
+                    <div class="col-md-5" style="height: 130px; padding-top: 45px; background: brown none repeat scroll 0% 0%;">
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon" id="sizing-addon1">@</span> 
                             <input type="text" name="" class="form-control" placeholder="Seu email" aria-describedby="sizing-addon1">
