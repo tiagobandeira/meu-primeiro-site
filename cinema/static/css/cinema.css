@@ -27,17 +27,17 @@ header img{
 }
 /*grid*/
 div[role="grid"]{
-    background: #222;
+    fbackground: #222;
     text-align: center;
-    color: #ddd;
+    rcolor: #ddd;
 }
 div[role="grid"]{
-    background: #222;
+    fbackground: #222;
     
 }
 /*posrs e anuncios*/
 div[role="grid"] .thumbnail{
-    background: #333;
+    rbackground: #333;
     border: none;
 }
 /*form de email*/
